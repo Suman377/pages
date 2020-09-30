@@ -17,7 +17,7 @@ spec:
         app: pages
     spec:
       containers:
-        - image: 99121673/pages:2.0
+        - image: 99121673/pages:pipeline
           name: pages
           ports:
             - containerPort: 8080
