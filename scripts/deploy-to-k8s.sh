@@ -3,8 +3,8 @@ set -ex
 
 kubectl apply -f deployment/pages-namespace.yaml
 kubectl apply -f deployment/pages-config.yaml
-kubectl delete svc pages
-kubectl delete deployment pages
+kubectl delete svc pages -ndelta
+kubectl delete deployment pages -ndelta
 kubectl apply -f deployment/pages-service.yaml
 kubectl apply -f deployment/pages-deployment.yaml
 
